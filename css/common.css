@@ -1,0 +1,369 @@
+@charset 'utf-8';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=Open+Sans:wght@400;500;600;700;800&family=Raleway:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined'); 
+/* 2. 초기화 */
+html {font-size: 10px;}
+* { padding: 0; margin: 0; box-sizing: border-box;}
+*:before, *:after {box-sizing: border-box;}
+html {}
+body { font-family: 'Open Sans', 'Pretendard', sans-serif; font-size: 1.6rem; color: #333; line-height: 1.6;}
+body.hidden {overflow: hidden;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans', 'Pretendard', sans-serif;} 
+input, select, textarea { font-family: 'Open Sans', 'Pretendard', sans-serif; font-size: 1.6rem; color: #333;}
+button {border: 0; cursor: pointer; background-color: transparent;}
+label {cursor: pointer;}
+a {text-decoration: none; color: #333;}
+ol, ul {list-style-type: none;}
+img {border: 0; vertical-align: top;}
+p {margin: 1em 0;}
+table {width: 100%; margin: auto; border-collapse: collapse; border-top: 1px solid #ddd;}
+th, td {padding: 10px; border-bottom: 1px solid #eee; text-align: center;}
+th {border-bottom-color: #ddd; background-color: #f8f8f8;}
+
+/* 3. 공용클래스 */
+.wrap {
+    width: 100%;
+    max-width: 1720px;
+    padding: 0 1%;
+    margin: auto;
+}
+.sound-only {
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.table {
+    display: table;
+    width: 100%;
+}
+.tc {
+    display: table-cell;
+    vertical-align: middle;
+}
+.center {
+    text-align: center;
+}
+.btn-solid {
+    display: inline-block;
+    line-height: 4rem;
+    padding: 0 2.4rem;
+    border-radius: 2rem; 
+    border: 1px solid #fdd350;
+    background-color: transparent; 
+    color: #fdd350;
+}
+.btn-color {
+    display: inline-block;
+    line-height: 4rem;
+    padding: 0 2.4rem;
+    border-radius: 2rem; 
+    background-color: #fdd350; 
+    color: #000;
+}
+.max560 {
+    width: 100%;
+    max-width: 56rem;
+}
+
+/* 4. 자주 사용하는 글자색과 배경 */
+.wh, .wh:hover, .wh a, .wh a:hover {
+    color: #fff !important;
+}
+.bk, .bk:hover, .bk a, .bk a:hover {
+    color: #000 !important;
+}
+.gr, .gr:hover, .gr a, .gr a:hover {
+    color: #999 !important;
+}
+.ye, .ye:hover, .ye a, .ye a:hover {
+    color: #fdd350 !important;
+}
+.bg-ye {background-color: #fdd350;}
+.bg-blu {color: #78bbe3;}
+.bg-gre {color: #72cba2;}
+.bg-ora {color: #e3a137;}
+.bg-per {color: #7670b1;}
+/* 스킵영역 */
+#skip {}
+#skip a {
+    position: fixed;
+    left: 0;
+    top: -5rem;
+    display: block;
+    width: 100%;
+    background-color: #fdd350;
+    text-align: center;
+    line-height: 4.8rem;
+    color: #fff;
+    z-index: 9999;
+    transition: top 0.2s;
+}
+#skip a:focus {
+    top: 0;
+}
+
+/* header shadow */
+#wah-hd.shadow h1 {
+    background-image: url('../images/logo_bk.png');
+}
+#wah-hd.shadow .depth1 > a {
+    color: #000;
+}
+#wah-hd.shadow .gnb-toggle-btn .toggle-line {
+    background-color: #333;
+}
+/* header */
+#wah-hd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9rem;
+    background-color: transparent;
+    z-index: 100;
+    text-align: center;
+    border-bottom: 1px solid rgba(221,221,221,0.5);
+    transition: 0.2s;
+}
+#wah-hd h1 {
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    width: 25rem;
+    height: 5.4rem;
+    margin-top: 1.8rem;
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#wah-hd h1 a {display: block;}
+#wah-hd.active {
+    background-color: #fff;
+}
+#wah-hd.active h1 {
+    background-image: url('../images/logo_bk.png');
+}
+#wah-hd.active .depth1 > a {
+    color: #000;
+}
+.gnb-toggle-btn {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background-color: transparent;
+    transform: translateY(-50%);
+    z-index: 101;
+}
+.toggle-line {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 0.4rem;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    text-indent: -9999em;
+    transition: top 0.3s 0.5s, transform 0.3s 0.2s;
+}
+.line1 {top: 20%;}
+.line2 {top: calc(50% - 0.1rem); transition: opacity 0.3s 0.6s;}
+.line3 {top: calc(80% - 0.2rem);}
+.gnb-toggle-btn.close .toggle-line {
+    top: calc(50% - 0.1rem);
+    background-color: #ccc;
+    transition: top 0.3s 0.2s, transform 0.3s 0.5s;
+}
+.gnb-toggle-btn.close .line1 {transform: rotate(45deg);}
+.gnb-toggle-btn.close .line2 {opacity: 0; transition: opacity 0.5s;}
+.gnb-toggle-btn.close .line3 {transform: rotate(-45deg);}
+
+.wah-gnb .depth1 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.wah-gnb .depth1:hover > a {
+    color: #fdd350 !important;
+    font-weight: 700;
+}
+.wah-gnb .depth1.active > a:after {
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0;
+    content: '';
+    width: 60%;
+    height: 0.2rem;
+    background-color: #fdd350;
+}
+.wah-gnb a:hover {
+    color: #fdd350;
+}
+.wah-gnb {
+    display: none;
+}
+.wah-gnb-bg {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 100%;
+    height: 19rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+.wah-gnb .depth1 > a {
+    position: relative;
+    line-height: 9rem;
+    padding-right: 7rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.depth1.active > a { color: #fdd350;} 
+.wah-gnb .depth2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 120%;
+    padding: 2rem 0;
+    height: auto;
+    text-align: left;
+}
+.wah-gnb:hover .depth2 {
+    height: 190px;
+}
+.wah-gnb .depth2 a {
+    line-height: 2.9rem;
+    font-size: 1.5rem;
+}
+.wah-gnb a {
+    display: block;
+}
+#wah-gnb.active > a {
+    color: #000;
+}
+.m-wah-gnb {
+    position: absolute;
+    right: -990rem;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    padding-top: 7rem;
+    background-color: #fff;
+    text-align: left;
+    transition: 1.2s;
+    box-shadow: -3px 3px 5px rgba(0,0,0,0.1);
+    background-image: url('../images/logo_ci_gr.png');
+    background-position: right bottom;
+    background-size: 30rem;
+    background-repeat: no-repeat;
+}
+.m-wah-gnb:before {
+    position: absolute;
+    top: calc(7rem - 1px);
+    right: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.m-wah-gnb .depth1 > a {
+    position: relative;
+    display: block;
+    line-height: 5.8rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid rgba(221,221,221,0.5);
+    background-color: #fff;
+}
+.m-wah-gnb .depth1 > a:after {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    content: '';
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 1px solid #666;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+.m-wah-gnb .depth2 {
+    display: none;
+    padding: 1.4rem 3rem;
+    background-color: #f4f4f4;
+}
+.m-wah-gnb .depth2 li {
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+
+.util-menu {
+    position: absolute;
+    right: -990rem;
+    top: 0;
+    transition: 1.2s;
+}
+.util-menu a {
+    display: inline-block;
+    margin: 2.5rem 0.8rem;
+}
+.m-wah-gnb.open {
+    right: 0;
+}
+.util-wrap.open .util-menu {
+    right: 5rem;
+}
+
+
+/* footer */
+#footer {
+    padding: 3rem 0;
+}
+
+.ft-logo-nia {
+    padding: 2rem 0;
+}
+.ft-logo-nia img {
+    width: 80%;
+    max-width: 37rem;
+    margin: auto;
+}
+.ft-top {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.ft-nav {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+
+.ft-info {
+    padding: 2rem 0;
+}
+.ft-info dl:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ft-info dt {float: left;}
+.ft-info dd {float: left;}
+
+.ft-logo img:first-child {width: 16.6rem;}
+.ft-botton {
+    margin-bottom: 3rem;
+}
+.ft-logo img {
+    padding: 1rem;
+}

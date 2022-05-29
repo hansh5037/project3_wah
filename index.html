@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹접근성연구소</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.jpg">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.jpg">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/pretendard.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common_res.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#main-container">본문 바로가기</a>
+        <a href="#wah-gnb">주메뉴 바로가기</a>
+        <a href="#wah-lnb">서브메뉴 바로가기</a>
+    </div>
+    <header id="wah-hd">
+        <h1><a href="index.html"><span class="sound-only">웹접근성연구소</span></a></h1>
+        <button class="gnb-toggle-btn">
+            <span class="toggle-line line1">라인</span>
+            <span class="toggle-line line2">라인</span>
+            <span class="toggle-line line3">라인</span>
+        </button>
+        <div class="nav-wrap">
+            <h2 class="sound-only">GNB</h2>
+            <nav id="wah-gnb">
+                <div class="wah-gnb-bg"><span class="sound-only">흰배경</span></div>
+                <ol class="wah-gnb">
+                    <li class="depth1">
+                        <a href="#">웹 접근성이란</a>
+                        <ul class="depth2">
+                            <li><a href="#">웹 접근성 개요</a></li>
+                            <li><a href="#">법. 제도</a></li>
+                            <li><a href="#">장애인의 웹사이트 이용</a></li>
+                            <li><a href="#">웹 접근성 품질인증</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">진단 및 컨설팅</a>
+                        <ul class="depth2">
+                            <li><a href="#">웹 접근성 개선지원 사업</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">교육마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">정보접근성 전문교육</a></li>
+                            <li><a href="#">세미나</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">지식마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">개발자아카이브</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">정보마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">기관 소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">기관장 인사말</a></li>
+                            <li><a href="#">한국지능정보사회진흥원</a></li>
+                            <li><a href="#">정보접근성 주요사업</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ol>
+                <ol class="m-wah-gnb">
+                    <li class="depth1">
+                        <a href="#">웹 접근성이란</a>
+                        <ul class="depth2">
+                            <li><a href="#">웹 접근성 개요</a></li>
+                            <li><a href="#">법. 제도</a></li>
+                            <li><a href="#">장애인의 웹사이트 이용 이해</a></li>
+                            <li><a href="#">웹 접근성 품질인증</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">진단 및 컨설팅</a>
+                        <ul class="depth2">
+                            <li><a href="#">웹 접근성 개선지원 사업</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">교육마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">정보 접근성 전문 교육</a></li>
+                            <li><a href="#">세미나</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">지식마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">개발자아카이브</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">정보마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">기관 소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">기관장 인사말</a></li>
+                            <li><a href="#">한국지능정보사회진흥원 소개</a></li>
+                            <li><a href="#">정보접근성 주요사업</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+            <h2 class="sound-only">유틸메뉴와 SNS</h2>
+            <nav class="util-wrap">
+                <div class="util-menu">
+                    <a href="#" class="btn-color">로그인</a>
+                    <a href="#" class="btn-color">회원가입</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="wah-main">
+        <section class="section sec1" id="main-container">
+            <div class="swiper main-vusual-swiper">
+                <ol class="main-visual-bg swiper-wrapper clearfix">
+                    <li class="main-visual-bg1 swiper-slide"><span class="sound-only">메인 배너 사진1 - 주차장 장애인 표시 사진</span></li>
+                    <li class="main-visual-bg2 swiper-slide"><span class="sound-only">메인 배너 사진2 - 노을배경과 어깨동무하고 있는 사람들의 사진</span></li>
+                    <li class="main-visual-bg3 swiper-slide"><span class="sound-only">메인 배너 사진3 - web accessible 표지판 사진</span></li>
+                </ol>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="main-visual-txt">
+                <h2 class="main-visual-title">Web Accessibility</h2>
+                <div class="main-visual-quote max560">
+                    <p class="quote-kr">웹의 힘은 그것의 보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다.</p>
+                    <p class="quote-en">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</p>
+                    <span>팀 버너스 리 경(Tim Berners - Lee) - 웹의 창시자 </span>
+                </div>
+            </div>
+        </section>
+        <section class="section sec2">
+            <div class="main-section2-txt">
+                <h2><img src="images/wah_txt.png" alt="웹접근성연구소"></h2>
+                <div class="h2-desc max560">한국지능정보사회진흥원은 국가 정보화 정책·기술 지원 기관인 한국정보사회 진흥원과 정보격차해소 글로벌 전문기관인 한국정보문화진흥원이 통합, 2009년 5월 새롭게 출범한 세계 최고의 ICT 정책·기술 전문 기관입니다.</div>
+            </div>
+            <div class="main-section2-icon-container swiper">
+                <ol class="main-section2-icon swiper-wrapper clearfix">
+                    <li class="swiper-slide ms2-icon1">
+                        <a href="https://www.wah.or.kr:444/Participation/%ED%95%9C%EA%B5%AD%ED%98%95%20%EC%9B%B9%20%EC%BD%98%ED%85%90%EC%B8%A0%20%EC%A0%91%EA%B7%BC%EC%84%B1%20%EC%A7%80%EC%B9%A8%202.1.pdf" target="_blank">
+                            <div class="icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>한국형 웹 콘텐츠 접근성 지침 2.1 (KWCAG 2.1)</dt>
+                                <dd>2015년 3월 31일 지침 2.1 개정</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide ms2-icon2">
+                        <a href="#" target="_blank">
+                            <div class="icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>웹 콘텐츠<br>제작기법</dt>
+                                <dd>웹접근성 제작기법에 대한 정보 제공</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide ms2-icon3">
+                        <a href="#" target="_blank">
+                            <div class="icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>웹 콘텐츠 신기술<br>제작기법</dt>
+                                <dd>웹 콘텐츠 신기술 제작기법 가이드라인을 제공</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide ms2-icon4">
+                        <a href="#" target="_blank">
+                            <div class="icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>W3C 접근성<br>문서 번역</dt>
+                                <dd>웹 접근성 관련 문서를 한국어로 번역한 것을 제공</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide ms2-icon5">
+                        <a href="#" target="_blank">
+                            <div class="icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>모바일 애플리케이션 콘텐츠 접근성 지침 2.0</dt>
+                                <dd>2016년 10월 20일 지침 2.0 개정</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide ms2-icon6">
+                        <a href="#" target="_blank">
+                            <div class="icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>모바일 앱 접근성<br>평가 교육 동영상 </dt>
+                                <dd>오프라인 진단 및 컨설팅에서 교육용 동영상</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="swiper-slide ms2-icon7">
+                        <a href="#" target="_blank">
+                            <div class="icon ios-icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <div class="icon android-icon"><span class="sound-only">아이콘 이미지</span></div>
+                            <dl class="ms2-txt">
+                                <dt>모바일 앱 접근성<br>제작기법</dt>
+                                <dd>IOS와 Android의 모바일 앱 접근성에<br>대한 제작기법을 제공</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="section sec3">
+            <div class="main-section3-txt">
+                <h2><span class="bg-blu">“장애에 구애 없이 모든</span><span class="bg-gre">사람들이 손쉽게</span><span class="bg-ora">정보를 공유할 수 있는</span><span class="bg-per">인터넷 공간 만들기”</span></h2>
+                <div class="h2-desc">웹접근성이란? 누구든(장애인, 비장애인, 고령자 등을 포함한 이용자 모두), 어떤 환경에서든 웹사이트에서 제공하는 정보를 동등하게 접근하고 이해할 수 있도록 보장하는것입니다.</div>
+            </div>
+            <div class="main-section3-define clearfix">
+                <div class="ms3-logo">
+                    <div class="ms3-wa">Web Accessibility</div>
+                    <div class="ms3-wa-desc">모두가 이용가능한 홈페이지</div>
+                </div>
+                <ol class="wa-define clearfix">
+                    <li>
+                        <dl>
+                            <dt class="define">VARIOUS USERS </dt>
+                            <dd class="define-desc">나이가 들어감에 따라 기능적 능력이 변한 연로한 사람</dd>
+                            <dd class="define-desc">팔이 부러지거나 안경을 잃어버려서 “일시적인 장애”를 겪는 사람</dd>
+                            <dd class="define-desc">밝은 햇빛이나 소리를 듣기 힘든 환경에 있어 “상황적 제약”을 겪는 사람</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="define">VARIOUS BROWSERS</dt>
+                            <dd class="define-desc">구글의 크롬, 모질라의 파이어폭스, 마이크로소프트 엣지, 오페라 브라우저, 비발디브라우저 등 다양한 브라우저를 이용하는 사람</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="define">VARIOUS DEVICE</dt>
+                            <dd class="define-desc">작은 화면,  휴대폰, 스마트 워치, 스마트 TV 및 다른 디바이스를 사용하는 사람</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="define">VARIOUS WAYS</dt>
+                            <dd class="define-desc">화면을 확대해서 사용하거나, 홈페이지 텍스트를 소리로 듣거나 점자를 활용하여 이용하는 사람 다양한 장애인보조기기를 통하여 홈페이지에서 제공하는 정보에 접근하는 사람</dd>
+                        </dl>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="section sec4">
+            <div class="main-biz-container clearfix">
+                <div class="main-biz-section biz1">
+                    <a href="#">
+                        <div class="main-biz-txt">
+                            <div class="mb-num gr">01</div>
+                            <h3 class="mb-title wh">정보접근성 제도지원</h3>
+                            <div class="mb-title-en wh">LAW SUPPORT</div>
+                            <div class="mb-hide">
+                                <div class="main-biz wh">보접근성 법제도 도입지원<br>정보접근성 품질인증제도 운영지원<br>정보접근성 민·관 협력지원</div>
+                                <button class="btn-solid mb-more-btn">VIEW MORE</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main-biz-section biz2">
+                    <a href="#">
+                        <div class="main-biz-txt">
+                            <div class="mb-num gr">02</div>
+                            <h3 class="mb-title wh">정보접근성 실태조사</h3>
+                            <div class="mb-title-en wh">SERVEY</div>
+                            <div class="mb-hide">
+                                <div class="main-biz wh">웹 접근성 실태조사(국가승인통계) 수행<br> 모바일 앱 및 무인정보단말기 수준진단 수행</div>
+                                <button class="btn-solid mb-more-btn">VIEW MORE</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main-biz-section biz3">
+                    <a href="#">
+                        <div class="main-biz-txt">
+                            <div class="mb-num gr">03</div>
+                            <h3 class="mb-title wh">정보접근성 개선지원</h3>
+                            <div class="mb-title-en wh">IMPROVEMENT</div>
+                            <div class="mb-hide">
+                                <div class="main-biz wh">웹 사이트 및 무인정보단말기 개선지원<br>실무자(개발자, 기획자 등)대상 정보접근성 기술교육</div>
+                                <button class="btn-solid mb-more-btn">VIEW MORE</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section sec5 clearfix">
+            <div class="main-secticon5-hd wh">
+                <h2>정보마당</h2>
+                <div class="h2-desc">웹 접근성에 대한 최신 정보와 다양한<br>자료들을 확인하실 수 있습니다.</div>
+                <ul class="section-tab-menu clearfix">
+                    <li class="slide-btn notice-btn"><a href="#">공지사항</a></li>
+                    <li class="slide-btn reference-btn"><a href="#">자료실</a></li>
+                </ul>
+            </div>
+            <div class="main-section5-container">
+                <div class="tab1 tab-box active">
+                    <h3 class="sound-only">공지사항</h3>
+                    <div class="slick-container sec5-latest-slick">
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">라이브</div>
+                            <div class="latest-title">2022년 제1차 정보접근성 오픈 아카데미 라이브 방송</div>
+                            <div class="latest-content">2022 제1차 정보접근성 오픈 아카데미 유투브 라이브 방송 안내 - 실무자(디자이너, 기획자, 퍼블리셔, 개발자) 중심 정보접근성 기술교육 - 일 시 : 2022. 3. 31(목), 20:00~22:00 참 여:https://youtu.be/U5Z3Iiq73xg 대 상 : 정보접근성 관심있는 누구나(무료) ...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">공지사항</div>
+                            <div class="latest-title">무인정보단말(키오스크) 정보접근성 개선 지원 수요조사</div>
+                            <div class="latest-content">대상 : 정보취약계층을 위한 무인정보단말(키오스크) 이용편의성 개선 지원을 희망하는 기관 및 단체 □ 귀 기관의 무궁한 발전을 기원합니다. □ 한국정보화진흥원은「국가정보화 기본법」제14조에 따라 정보 취약계층의 정보격차 해소 ...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">홍보</div>
+                            <div class="latest-title">2021 국민행복 IT 경진대회 개최</div>
+                            <div class="latest-content">2022 제1차 정보접근성 오픈 아카데미 유투브 라이브 방송 안내 - 실무자(디자이너, 기획자, 퍼블리셔, 개발자) 중심 정보접근성 기술교육 - 일 시 : 2022. 3. 31(목), 20:00~22:00 참 여:https://youtu.be/U5Z3Iiq73xg 대 상 : 정보접근성 관심있는 누구나(무료) ...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">공지사항</div>
+                            <div class="latest-title">온라인 자문서비스 중단 안내(2019.9.30 월)</div>
+                            <div class="latest-content">웹 접근성 연구소에서 제공 중이던,"온라인 자문서비스"가 중단됨을 알려드립니다. ■ 중단 대상 : 웹 접근성 연구소 온라인 자문서비스 ■ 중단 일시 : 2019. 9. 30(월) 그 동안, 웹 접근성 연구소 온라인 자문서비스를이용해 주셔서 감사합니다. </div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">행사안내</div>
+                            <div class="latest-title">키오스크 정보접근성 및 이용환경 개선 컨퍼런스</div>
+                            <div class="latest-content">□ 행사명 : 키오스크 정보접근성 및 이용환경 개선 컨퍼런스  ㅇ 주 제 : “키오스크, 디지털포용을 만나다” ㅇ 일 시 : ‘21.06.16(수), 14:00 ~ 17:30 ㅇ 장 소 : 포스트타워(서울특별시 중구 충무로1가 21) 10층 대회의실 ※ 일반 참가자는 온라인 방송 ...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">공지사항</div>
+                            <div class="latest-title">2022년 제1차 정보접근성 오픈 아카데미 라이브 방송 안내</div>
+                            <div class="latest-content">2022 제1차 정보접근성 오픈 아카데미 유투브 라이브 방송 안내 - 실무자(디자이너, 기획자, 퍼블리셔, 개발자) 중심 정보접근성 기술교육 -  일 시 : 2022. 3. 31(목), 20:00~22:00 참 여:https://youtu.be/U5Z3Iiq73xg 대 상 : 정보접근성 관심있는 누구나...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab2 tab-box">
+                    <h3 class="sound-only">자료실</h3>
+                    <div class="slick-container sec5-latest-slick">
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">표준지침</div>
+                            <div class="latest-title">공공 단말기 접근성 가이드라인(KS X 9211) 2016년 7월...</div>
+                            <div class="latest-content">주요내용 ;이 표준은 신체적, 정신적 장애를 지닌 사용자도 공공 단말기를 사용할 수 있도록 하기 위한 설계 및 제작상의 고려사항을 규정한다. 이 표준에서 규정하는 것은 공공 단말기의 설치 환경, 하드웨어, 소프트웨어 및 콘텐츠에 적용된다. 공공 단말기 제조업자 및 서비스...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">연구자료</div>
+                            <div class="latest-title">정보접근성 향상을 위한 W3C 국제표준 WAI-ARIA 사례집</div>
+                            <div class="latest-content">정보접근성 향상을 위한 W3C 국제표준 WAI-ARIA 사례집인 "예제로 살펴보는 WAI-ARIA" 온라인 판을 배포하오니, 많은 활용 바랍니다.  # 목차  제1장 개요 1. WAI-ARIA 소개 6 1.1 WAI-ARIA 란? 6 1.2 WAI-ARIA의 목적 8 2. ARIA Roles & States and Properties 9 ...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">세미나</div>
+                            <div class="latest-title">2019 정보접근성 세미나 자료집</div>
+                            <div class="latest-content">2019년 11월 19일(화) 국회의원회관 제2소회의실에서 개최된 "2019 정보접근성 세미나 - 키오스크 세상과 디지털 소외" 발표자료를 공유합니다.  □ 추진 목적 ㅇ 취약계층 정보접근성 이슈와 민간분야의 정보접근성 개선 노력을 공유하고, 향후 관련 정책 추진 방향에 대해...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">기타</div>
+                            <div class="latest-title">무인정보단말기 정보접근성 안내(2021)</div>
+                            <div class="latest-content">무인정보단말기 접근성의 정의, 필요성, 표준 등을 보다 알기 쉽도록 설명한 홍보물입니다.  무인정보단말기 대한 정보접근성 인식제고에 활용하시기 바랍니다. 감사합니다. </div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">고시</div>
+                            <div class="latest-title">웹 접근성 품질인증기관 지정 및 품질인증 등에 관한 ...</div>
+                            <div class="latest-content">[고시] 웹 접근성 품질인증기관 지정 및 품질인증 등에 관한 고시(미래창조과학부고시 제2016-130호)제정년도 : 2013.12.23 미래창조과학부 고시 제2013-194호개정년도 : 2016.12.23 미래창조과학부 고시 제2016-130호국가정보화기본법 제31조의2에서 제32조의5...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                        <a href="#" class="latest-slide">
+                            <div class="btn-color latest-cate">매뉴얼</div>
+                            <div class="latest-title">모바일 애플리케이션(iOS) 접근성 점검 매뉴얼 1.0</div>
+                            <div class="latest-content">행정안전부 고시로 2011년 9월 22일 제정한 "모바일 애플리케이션 접근성 지침"과 관련하여 애플의 iOS 환경에서 개발된 모바일 애플리케이션의 접근성 준수 여부를 평가할 수 있는 "모바일 애플리케이션(iOS) 접근성 매뉴얼 1.0"입니다. 본 매뉴얼은 사례 및 기술 방법 ...</div>
+                            <span class="latest-day">2022.04.26</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer" class="section fp-auto-height">
+        <div class="wrap">
+            <div class="ft-top">
+                <div class="ft-logo-nia"><img src="images/nia2.png" alt="한국진흥정보사회진흥원(nia)"></div>
+                <ul class="ft-nav clearfix">
+                    <li><a href="#">한국지능정보사회진흥원소개 </a></li>
+                    <li><a href="#">웹 접근성 정책</a></li>
+                    <li><a href="#" class="ye">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부 </a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+                <div class="ft-info clearfix">
+                    <dl>
+                        <dt class="ft-info-hide">주소 &nbsp;</dt>
+                        <dd>대구광역시 동구 첨단로 53 (41068)</dd>
+                    </dl>
+                    <dl>
+                        <dt>기고관명 및 소속부서 &nbsp;</dt>
+                        <dd>한국지능정보사회진흥원 디지털포용본부</dd>
+                    </dl>
+                    <dl>
+                        <dt>전화번호 &nbsp;</dt>
+                        <dd>053-230-1388 </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="ft-botton clearfix">
+                <div class="copyright">
+                    <p class="capy">Copyright &copy; 2017 National Information Society Agency</p>
+                    <p>이 사이트는 취업을 목적으로 포트폴리오 용으로 제작되었으며 회사와는 아무 상관이 없습니다. <br>사이트 제작에 사용된 이미지나 로고는 각 사이트에 저작권이 있습니다.</p>
+                </div>
+                <div class="ft-logo clearfix">
+                    <img src="images/wa.jpg" alt="웹접근성 인증마크">
+                    <img src="images/btm_banner.gif" alt="손말이음센터 마크(연중무휴 국번없이 107)">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

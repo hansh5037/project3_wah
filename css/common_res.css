@@ -1,0 +1,115 @@
+@charset 'utf-8';
+@media screen and (max-width: 767px) {
+    .btn-color, .btn-solid {
+        line-height: 3rem;
+        font-size: 1.4rem;
+        padding: 0 2rem;
+    }
+    #wah-hd {
+        height: 7rem;
+    }
+    .util-menu a {
+        margin: 2rem 0.4rem;
+    }
+    #wah-hd h1 {
+        left: 1rem;
+        width: 16rem;
+        margin-top: 0.8rem;
+    }
+    .gnb-toggle-btn {
+        right: 1rem;
+    }
+    .ft-nav {
+        font-size: 1.8rem;
+    }
+    .ft-top, .ft-botton, .ft-top a {
+        font-size: 1.3rem;
+    }
+    .ft-nav li {
+        float: left;
+        width: 50%;
+        padding: 0.6rem 0;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-width: 0 0 1px 0;
+    }
+    .ft-nav li:first-of-type {
+        width: 100%;
+    }
+    .ft-nav li:nth-of-type(2n) {
+        border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .ft-logo {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .m-wah-gnb {
+        padding-top: 9rem;
+    }
+    .m-wah-gnb:before {
+        top: calc(9rem - 1px);
+    }
+    .ft-top {
+        text-align: left;
+    }
+    .ft-nav li:first-child:before {
+        display: none;
+    }
+    .ft-info dt:before,  .ft-nav li:before {
+        content: '/';
+        display: inline-block;
+        padding: 0 1.8rem;
+    }
+    .ft-info-hide:before {
+        display: none !important;
+    }
+    .ft-nav li {
+        display: inline-block;
+    }
+    .copyright {
+        float: left;
+    }
+
+    .ft-nav li {
+        width: inherit;
+        border-width: 0;
+    }
+    .ft-logo {
+        float: left;
+    }
+    .ft-logo img {
+        float: left;
+    }
+    .ft-botton {
+        text-align: left;
+    }
+    .ft-info dl {float: left;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .util-wrap.open .util-menu {
+        right: 8rem;
+    }
+    .ft-top, .ft-botton, .ft-top a {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .gnb-toggle-btn {display: none;}
+    .m-wah-gnb {display: none;}
+    .wah-gnb {display: block;}
+    .util-menu {display: block;}
+    .util-menu {
+        position: absolute;
+        left: inherit;
+        right: 3rem;
+        top: 0;
+    }
+    .ft-logo {
+        float: right;
+    }
+}
